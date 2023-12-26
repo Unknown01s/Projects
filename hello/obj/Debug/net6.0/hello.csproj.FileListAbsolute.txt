@@ -1,0 +1,15 @@
+/Users/alihansmac/Desktop/Project/hello/bin/Debug/net6.0/hello
+/Users/alihansmac/Desktop/Project/hello/bin/Debug/net6.0/hello.deps.json
+/Users/alihansmac/Desktop/Project/hello/bin/Debug/net6.0/hello.runtimeconfig.json
+/Users/alihansmac/Desktop/Project/hello/bin/Debug/net6.0/hello.dll
+/Users/alihansmac/Desktop/Project/hello/bin/Debug/net6.0/hello.pdb
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.csproj.AssemblyReference.cache
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.AssemblyInfoInputs.cache
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.AssemblyInfo.cs
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.csproj.CoreCompileInputs.cache
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.dll
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/refint/hello.dll
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.pdb
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/hello.genruntimeconfig.cache
+/Users/alihansmac/Desktop/Project/hello/obj/Debug/net6.0/ref/hello.dll
