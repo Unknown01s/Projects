@@ -324,30 +324,32 @@ Car.Cars araba = (Car.Cars)Convert.ToInt32(Console.ReadLine());
 
 switch (araba)
 {
-    case (Car.Cars ford):
+    case Car.Cars ford:
         Console.WriteLine("seçtiğiniz araç : ford");
         break;
 
-    case (Car.Cars nissan):
+    case Car.Cars nissan :
         Console.WriteLine("seçtiğiniz araç : nissan");
         break;
 
-    case (Car.Cars seat):
+    case Car.Cars seat :
         Console.WriteLine("seçtiğiniz araç :seat");
         break;
 
 
-    case (Car.Cars skoda):
+    case Car.Cars skoda :
         Console.WriteLine("seçtiğiniz araç : skoda");
         break;
 
-    case (Car.Cars mercedes):
+    case Car.Cars mercedes :
         Console.WriteLine("seçtiğiniz araç : mercedes");
         break;
 
-    case (Car.Cars bmw):
+    case Car.Cars bmw :
         Console.WriteLine("seçtiğiniz araç : bmw");
         break;
+    default:
+
 
 
 }
