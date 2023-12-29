@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/* See https://aka.ms/new-console-template for more information
 // deger tipli degiskenler
 
 #region ilk ders
@@ -255,7 +255,7 @@ Console.WriteLine(sum3); //sonucumuz burda çıkıcaktır
 
 
 
- /*switch case ile tool bar menüsü seçme yapmaya çalışıcağım
+/*switch case ile tool bar menüsü seçme yapmaya çalışıcağım
 
 Console.WriteLine("masaüstüne hoşgeldiniz lütfen yapmak istediğiniz işlemi seçiniz");// kullanıcıdan seçim yapması için çıktı üretiyorum
 Console.WriteLine("bilgisayarım: 1");
@@ -276,38 +276,38 @@ string kullanıcıislemi = Console.ReadLine(); //sadece sayı seçeceğimiz içi
 switch (kullanıcıislemi) // switch case yazarak işlem seçtiriyoruz ayrıca sayı değerleri ile işlemi kısaltıp hata yapımını azaltıyoruz
 {
 
-    case ("1"):
-        Console.WriteLine("bilgisayarıma hoşgeldiniz");
-        break;
+   case ("1"):
+       Console.WriteLine("bilgisayarıma hoşgeldiniz");
+       break;
 
-    case ("2"):
-        Console.WriteLine("indirilenlere hoşgeldiniz");
-        break;
+   case ("2"):
+       Console.WriteLine("indirilenlere hoşgeldiniz");
+       break;
 
-    case ("3"):
-        Console.WriteLine("terminale hoşgeldiniz");
-        break;
+   case ("3"):
+       Console.WriteLine("terminale hoşgeldiniz");
+       break;
 
-    case ("4"):
-        Console.WriteLine("oyunlara hoşgeldiniz");
-        break;
+   case ("4"):
+       Console.WriteLine("oyunlara hoşgeldiniz");
+       break;
 
-    case ("5"):
-        Console.WriteLine("safariye hoşgeldiniz");
-        break;
+   case ("5"):
+       Console.WriteLine("safariye hoşgeldiniz");
+       break;
 
-        default:
-        Console.WriteLine("lütfen geçerli bir işlem yapın"); // int değere çevirdiğimizde yapabilir miyiz bakalım 
-        break;
+       default:
+       Console.WriteLine("lütfen geçerli bir işlem yapın"); // int değere çevirdiğimizde yapabilir miyiz bakalım 
+       break;
 
 
 }
- */
+*/
 
 
 
 
-//public class ve enum deniyerek seçim şansı yapma
+/*public class ve enum deniyerek seçim şansı yapma
 Console.WriteLine("lütfen bir araba markası seçimiz");
 Console.WriteLine("1 : ford");
 Console.WriteLine("2 : nissan");
@@ -354,7 +354,65 @@ switch (araba)
 
 }
 
-//hocaya sor */
+*/
+
+
+/* önceki konular için küçük bir tekrarda değer atıyalım ve çıkartıp aray kuralım
+
+int deger1 = 12;
+bool deger2 = 12 > 10;
+double deger3 = 12.32;
+
+float deger4 = (float)deger3;
+
+
+Console.WriteLine("lütfen bir sayı değeri giriniz:");
+
+int[] array = new int[2];
+
+array[0] = Convert.ToInt32(Console.ReadLine());
+array[1] = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(array[0]);
+Console.WriteLine(array[1]);
+*/
+
+Console.WriteLine("lütfen yapmak istediğiniz işlemi seçiniz:");
+Console.WriteLine("1 : girdiğiniz sayının tek çift olduğunu öğrenme.");
+Console.WriteLine("2 : girdiğiniz sayıyı bir eksiltme.");
+Console.WriteLine("3 : isminiz ile karşılanma.");
+Console.WriteLine("4 : hangi gün olduğunu öğrenme.");
+
+
+
+    Console.WriteLine("lütfen bir sayı değeri giriniz.");
+
+int value = Convert.ToInt32(Console.ReadLine());
+
+if (value % 2 == 0)
+{
+    Console.WriteLine("girdiğiniz sayı çifttir.");
+
+}
+else
+{
+    Console.WriteLine("girdiğiniz sayı tektir.");
+
+}
+
+
+int value2 = value - 1;
+Console.WriteLine("girdiğiniz sayının bir eksiği :" + value2);
+
+
+Console.WriteLine("lütden isminizi giriniz:");
+string isim = Console.ReadLine();
+Console.WriteLine("hoşgeldiniz" + isim);
+
+
+
+
+
 
 
 
