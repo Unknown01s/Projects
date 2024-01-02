@@ -1,0 +1,15 @@
+/Users/alihansmac/Projects/Donguler/bin/Debug/net6.0/Donguler
+/Users/alihansmac/Projects/Donguler/bin/Debug/net6.0/Donguler.deps.json
+/Users/alihansmac/Projects/Donguler/bin/Debug/net6.0/Donguler.runtimeconfig.json
+/Users/alihansmac/Projects/Donguler/bin/Debug/net6.0/Donguler.dll
+/Users/alihansmac/Projects/Donguler/bin/Debug/net6.0/Donguler.pdb
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.csproj.AssemblyReference.cache
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.AssemblyInfoInputs.cache
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.AssemblyInfo.cs
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.csproj.CoreCompileInputs.cache
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.dll
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/refint/Donguler.dll
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.pdb
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/Donguler.genruntimeconfig.cache
+/Users/alihansmac/Projects/Donguler/obj/Debug/net6.0/ref/Donguler.dll

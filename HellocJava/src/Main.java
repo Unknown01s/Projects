@@ -241,6 +241,83 @@ public class Main {
 
 */
 
+       /* int i = 0;
+
+        while (i<500){
+            System.out.println("hello world");
+            i++;
+
+        }
+
+        int[] dizi = new int[4];
+
+        dizi[0] = 10;
+        dizi[1] = 20;
+        dizi[2] = 30;
+        dizi[3] = 40;
+
+        for(int i = 0; i<dizi.length;i++){
+            System.out.println(dizi[i]);
+        } */
+
+        /* int[] dizi = new int[4];
+        Scanner scanner = new Scanner(System.in);
+
+        for(int i = 0; i<dizi.length; i = i + 2){
+            System.out.print(i +1 + ". indeksli sayıyı giriniz: ");
+            dizi[i] = scanner.nextInt();
+        }
+        //for(int i = 0; i< dizi.length; i++){
+           // System.out.println(dizi[i]);
+        // }
+
+        //for each değer yazdırmak için
+        for(int item: dizi){
+            System.out.println(item);
+        }
+*/
+
+Scanner scanner = new Scanner(System.in);
+
+       do {
+           System.out.println("lütfen bir gün giriniz");
+           System.out.println("0: pazartesi");
+           System.out.println("1: salı");
+            Gunler gunler = Gunler.values()[scanner.nextInt()];
+
+            if(gunler == Gunler.pazartesi){
+                System.out.println("bugün pazartesi");
+
+            }
+            else if (gunler == Gunler.sali) {
+                System.out.println("bugün salı");
+            }
+            else {
+                System.out.println("sistemden çıkış yaptınız");
+                break;
+            }
+
+
+
+
+
+
+
+            /*switch (gunler){
+
+                case pazartesi:
+                    System.out.println("bugün pazartesi");
+                    break;
+
+                case sali:
+                    System.out.println("bugün salı");
+                    break;
+                default:
+                    System.out.println("sistemden çıkış yaptınız");
+                    break;
+            }*/
+
+       } while(true);
 
 
 
