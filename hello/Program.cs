@@ -1,5 +1,5 @@
-﻿/* See https://aka.ms/new-console-template for more information
-// deger tipli degiskenler
+﻿// See https://aka.ms/new-console-template for more information
+/* deger tipli degiskenler
 
 #region ilk ders
 using hello;
@@ -377,6 +377,9 @@ Console.WriteLine(array[0]);
 Console.WriteLine(array[1]);
 */
 
+using hello;
+/*
+
 Console.WriteLine("lütfen yapmak istediğiniz işlemi seçiniz:");
 Console.WriteLine("1 : girdiğiniz sayının tek çift olduğunu öğrenme.");
 Console.WriteLine("2 : girdiğiniz sayıyı bir eksiltme.");
@@ -384,19 +387,72 @@ Console.WriteLine("3 : isminiz ile karşılanma.");
 Console.WriteLine("4 : hangi gün olduğunu öğrenme.");
 
 
+int kısayol = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("lütfen bir sayı değeri giriniz.");
+switch (kısayol)
+{
+
+    case 1 :
+        Console.WriteLine("Lütfen bir sayı giriniz:");
+        int sayi = Convert.ToInt32(Console.ReadLine());
+        if(sayi % 2 == 0)
+        {
+            Console.WriteLine("girdiğiniz sayı çifttir.");
+            }
+
+        else
+        {
+            Console.WriteLine("girdiğiniz sayı tektir.");
+
+        }
+
+                break;
+
+    case 2:
+
+        Console.WriteLine("Lütfen bir sayı giriniz:");
+        int sayi1 = Convert.ToInt32(Console.ReadLine());
+        int sayi2 = sayi1 - 1;
+        Console.WriteLine("girdiğiniz sayının bir eksiği:" + sayi2);
+
+        break;
+
+
+    case 3:
+
+        Console.WriteLine("lütfen adınızı giriniz:");
+        string name = Console.ReadLine();
+        Console.WriteLine("Hoşgeldiniz" + name + "bey");
+
+        break;
+
+    case 4:
+
+        Gunler.GunlerEnum gun = (Gunler.GunlerEnum)Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine();
+
+        break;
+
+
+
+
+
+}
+*/
+
+
+/* Console.WriteLine("lütfen bir sayı değeri giriniz.");
 
 int value = Convert.ToInt32(Console.ReadLine());
 
 if (value % 2 == 0)
 {
-    Console.WriteLine("girdiğiniz sayı çifttir.");
+ Console.WriteLine("girdiğiniz sayı çifttir.");
 
 }
 else
 {
-    Console.WriteLine("girdiğiniz sayı tektir.");
+ Console.WriteLine("girdiğiniz sayı tektir.");
 
 }
 
@@ -408,6 +464,105 @@ Console.WriteLine("girdiğiniz sayının bir eksiği :" + value2);
 Console.WriteLine("lütden isminizi giriniz:");
 string isim = Console.ReadLine();
 Console.WriteLine("hoşgeldiniz" + isim);
+*/
+
+Secenekler.Secenek secenek = (Secenekler.Secenek)Convert.ToInt32(Console.ReadLine());
+
+switch (secenek)
+{
+
+    case Secenekler.Secenek.tekcift:
+
+        Console.WriteLine("lütfen bir sayı değeri giriniz.");
+
+        int value = Convert.ToInt32(Console.ReadLine());
+
+        if (value % 2 == 0)
+        {
+            Console.WriteLine("girdiğiniz sayı çifttir.");
+
+        }
+        else
+        {
+            Console.WriteLine("girdiğiniz sayı tektir.");
+
+        }
+
+        break;
+
+    case Secenekler.Secenek.sayininbireksigi:
+
+        Console.WriteLine("lütfen bir sayı giriniz:");
+        int value3 = Convert.ToInt32(Console.ReadLine());
+        int value2 = value3 - 1;
+        Console.WriteLine("girdiğiniz sayının bir eksiği :" + value2);
+
+        break;
+
+    case Secenekler.Secenek.karsilama:
+
+        Console.WriteLine("lütden isminizi giriniz:");
+        string isim = Console.ReadLine();
+        Console.WriteLine("hoşgeldiniz" + isim);
+
+        break;
+
+    case Secenekler.Secenek.gun:
+
+        Console.WriteLine("lütfen bir gün seçiniz:");
+        Console.WriteLine("1:pazartesi");
+        Console.WriteLine("2:salı");
+        Console.WriteLine("3:çarşamba");
+        Console.WriteLine("4:perşembe");
+        Console.WriteLine("5:cuma");
+        Console.WriteLine("6:cumartesi");
+        Console.WriteLine("7:pazar");
+
+        Gunler.GunlerEnum gun = (Gunler.GunlerEnum)Convert.ToInt32(Console.ReadLine());
+
+        switch (gun)
+        {
+            case Gunler.GunlerEnum.Pazartesi:
+                Console.WriteLine("bugün pazartesi");
+                break;
+
+
+            case Gunler.GunlerEnum.Sali:
+                Console.WriteLine("bugün salı");
+                break;
+
+
+            case Gunler.GunlerEnum.Carsamba:
+                Console.WriteLine("bugün çarşamba");
+                break;
+
+
+
+            case Gunler.GunlerEnum.Persembe:
+                Console.WriteLine("bugün persembe");
+                break;
+
+
+
+            case Gunler.GunlerEnum.Cuma:
+                Console.WriteLine("bugün cuma");
+                break;
+
+
+            default:
+
+                break;
+        }
+
+        break;
+
+    default:
+
+        break;
+
+
+}
+
 
 
 

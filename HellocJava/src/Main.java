@@ -17,6 +17,15 @@ public class Main {
         cumartesi,
         pazar
     }
+    enum Caseler {
+        tekcift,
+        birineksigi,
+        karsılama,
+        gunler
+
+    }
+
+
     public static void main(String[] args) {
         /*
         int sayi = 4;
@@ -95,7 +104,7 @@ public class Main {
             System.out.print("girdiğiniz sayı değeri tektir.");
         }
 
-*/
+
         System.out.println("bir gün değeri tuşlayınız");
         System.out.println("pazartesi");
         System.out.println("salı");
@@ -132,10 +141,105 @@ public class Main {
                 break;
         }
 
+        System.out.println("programımıza hoşgeldiniz lütfen yapmak istediğiniz işlemi seçiniz");
+        System.out.println("0: sayıların tek çift olduğunu öğrenme");
+        System.out.println("1: girdiğiniz sayının bir eksiği");
+        System.out.println("2: adınız ile karşılama");
+        System.out.println("3: gününüzü belirleme");
+
+      Scanner scanner = new Scanner(System.in);
+
+      Caseler caseler = Caseler.values()[scanner.nextInt()];
+
+
+        int sayi = 0;
+
+        switch (caseler){
+
+            case tekcift:
+                System.out.println("lütfen bir sayı giriniz");
+                sayi = scanner.nextInt();
+                if(sayi % 2 == 0){
+                    System.out.println("girdiğiniz sayı çifttir");
+                }
+                else {
+                    System.out.println("girdiğiniz sayı tektir");
+                }
+                break;
+
+            case birineksigi:
+                System.out.println("bir sayı giriniz");
+                sayi = scanner.nextInt();
+                int ex = sayi - 1;
+                System.out.println("girdiğiniz sayının bir eksiği:" + ex);
+                break;
+
+            case karsılama:
+                System.out.println("lütfen adınızı giriniz");
+                String name = scanner.next();
+                System.out.println("hoşgeldiniz " + name);
+                break;
+
+            case gunler:
+                System.out.println("pazartesi");
+                System.out.println("salı");
+                System.out.println("çarşamba");
+                System.out.println("perşembe");
+                System.out.println("cuma");
+                System.out.println("cumartesi");
+                System.out.println("pazar");
+
+                Gunler gun = Gunler.values()[scanner.nextInt()];
+
+                switch (gun){
+
+                    case pazartesi:
+                        System.out.println("bugün pazartesi");
+                        break;
+
+                    case sali:
+                        System.out.println("bugün salı");
+                        break;
+
+                    case carsamba:
+                        System.out.println("bugün çarşamba");
+                        break;
+
+                    case persembe:
+                        System.out.println("bugün perşembe");
+                        break;
+
+                    case cuma:
+                        System.out.println("bugün cuma");
+                        break;
+
+                    case cumartesi:
+                        System.out.println("bugün cumartesi");
+                        break;
+
+                    case pazar:
+                        System.out.println("bugün pazar");
+                        break;
+
+                    default:
+                        System.out.println("lütfen geçerli bir gün giriniz");
+                        break;
+
+                }
 
 
 
 
+
+
+
+
+
+
+        }
+
+
+*/
 
 
 
@@ -154,6 +258,7 @@ public class Main {
 
     }
 }
+
 
 
 

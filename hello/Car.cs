@@ -11,7 +11,7 @@ namespace hello
 			seat,
 			skoda,
 			mercedes,
-			bmw,
+			bmw
 
 		};
 	}

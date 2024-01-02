@@ -5,13 +5,13 @@ namespace hello
 	{
 		public enum GunlerEnum
 		{
-			Pazartesi,
-			Sali,
-			Carsamba,
-			Persembe,
-			Cuma,
-			Cumartesi,
-			Pazar
+			Pazartesi = 1,
+			Sali = 2,
+			Carsamba = 3,
+			Persembe = 4,
+			Cuma = 5,
+			Cumartesi = 6,
+			Pazar = 7
 		};
 	}
 }
