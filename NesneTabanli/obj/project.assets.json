@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alihansmac/Desktop/Project/Donguler/Donguler.csproj",
-      "projectName": "Donguler",
-      "projectPath": "/Users/alihansmac/Desktop/Project/Donguler/Donguler.csproj",
+      "projectUniqueName": "/Users/alihansmac/Desktop/Project/NesneTabanli/NesneTabanli.csproj",
+      "projectName": "NesneTabanli",
+      "projectPath": "/Users/alihansmac/Desktop/Project/NesneTabanli/NesneTabanli.csproj",
       "packagesPath": "/Users/alihansmac/.nuget/packages/",
-      "outputPath": "/Users/alihansmac/Desktop/Project/Donguler/obj/",
+      "outputPath": "/Users/alihansmac/Desktop/Project/NesneTabanli/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alihansmac/.nuget/NuGet/NuGet.Config"

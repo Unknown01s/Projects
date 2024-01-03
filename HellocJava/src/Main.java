@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import javax.sound.midi.Soundbank;
 import javax.swing.*;
 import java.awt.*;
@@ -27,6 +29,8 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+
         /*
         int sayi = 4;
         double sayi1 = 11.2;
@@ -277,6 +281,7 @@ public class Main {
         }
 */
 
+
 Scanner scanner = new Scanner(System.in);
 
        do {
@@ -315,29 +320,6 @@ Scanner scanner = new Scanner(System.in);
                 default:
                     System.out.println("sistemden çıkış yaptınız");
                     break;
-            }*/
+            }
 
-       } while(true);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-}
-
-
-
-
-
-
+         //while(true);

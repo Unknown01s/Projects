@@ -1,0 +1,15 @@
+/Users/alihansmac/Desktop/Project/NesneTabanli/bin/Debug/net6.0/NesneTabanli
+/Users/alihansmac/Desktop/Project/NesneTabanli/bin/Debug/net6.0/NesneTabanli.deps.json
+/Users/alihansmac/Desktop/Project/NesneTabanli/bin/Debug/net6.0/NesneTabanli.runtimeconfig.json
+/Users/alihansmac/Desktop/Project/NesneTabanli/bin/Debug/net6.0/NesneTabanli.dll
+/Users/alihansmac/Desktop/Project/NesneTabanli/bin/Debug/net6.0/NesneTabanli.pdb
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.csproj.AssemblyReference.cache
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.AssemblyInfoInputs.cache
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.AssemblyInfo.cs
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.csproj.CoreCompileInputs.cache
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.dll
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/refint/NesneTabanli.dll
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.pdb
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/NesneTabanli.genruntimeconfig.cache
+/Users/alihansmac/Desktop/Project/NesneTabanli/obj/Debug/net6.0/ref/NesneTabanli.dll
