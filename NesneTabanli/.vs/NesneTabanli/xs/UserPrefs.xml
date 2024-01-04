@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{9CADD593-9DB3-470E-97CC-D53C4A7D91C7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Telephone.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.NesneTabanli PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="171" Column="1" />
-      <File FileName="Telephone.cs" Line="32" Column="10" />
-      <File FileName="Tele.cs" />
+      <File FileName="Program.cs" Line="173" Column="1" />
+      <File FileName="Bina.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NesneTabanli" expanded="True">
-            <Node name="NesneTabanli" expanded="True">
-              <Node name="Telephone.cs" selected="True" />
+          <Node name="NesneTabanli">
+            <Node name="NesneTabanli">
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.NesneTabanli PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
