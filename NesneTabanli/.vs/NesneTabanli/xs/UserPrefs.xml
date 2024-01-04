@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{9CADD593-9DB3-470E-97CC-D53C4A7D91C7}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NesneTabanli PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.NesneTabanli PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="173" Column="1" />
-      <File FileName="Bina.cs" />
+      <File FileName="Program.cs" Line="336" Column="12" />
+      <File FileName="Cafe.cs" Line="56" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

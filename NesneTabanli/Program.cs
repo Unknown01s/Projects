@@ -165,7 +165,6 @@ else
     Console.WriteLine("lütfen geçerli bir marka giriniz");
 }
 
-*/
 
 using NesneTabanli;
 internal class Program
@@ -304,13 +303,261 @@ internal class Program
 
             }
 
-       
+            Bina selam = new Bina(6, "beyzanur", "ankara");
 
-
-
-
-
+            Console.WriteLine("bina no : " + selam.binano);
 
         }
     }
+}
+
+
+5 masa var masalara git    menüde çay ayran  ıhlamur kuşburnu latte espresso americano makarna pizza köfte patates hamburger 
+1.  1Masadan kahve. Al
+2.  2Masadan patates ve köfte
+3.  3Çay
+4. 4Ayran
+5  5hesap istedi 
+*/
+
+using NesneTabanli;
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        {
+            Console.WriteLine("Kafemize Hoşgeldiniz Lütfen Gördüğünüz Boş Alanları Tercih Ediniz");
+            Console.WriteLine(" ");
+
+            Cafe cafe = new Cafe();
+            
+            
+            Console.WriteLine("lütfen seçmek isteiğiniz masayı belirtiniz");
+            Console.WriteLine(" ");
+            Console.WriteLine("NOT : Sadece 1 den 5 e kadar numaralı masalarımız müsaittir.");
+            Console.WriteLine(" ");
+            Console.WriteLine("Lütfen bir Masa Numarası seçiniz");
+
+            Cafe.Cafelermasa masalar = new Cafe.Cafelermasa();
+
+            masalar = (Cafe.Cafelermasa)(Convert.ToInt32(Console.ReadLine()));
+
+            switch (masalar)
+               
+
+                {
+                case Cafe.Cafelermasa.masa1:
+
+                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
+                        Console.WriteLine(" ");
+
+                        do
+                        {
+
+                            Console.WriteLine("espresso 6");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("latte 5");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("americano 7");
+                            Console.WriteLine(" ");
+
+                            Cafe.Cafeler num = new Cafe.Cafeler();
+                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                            switch (num)
+                            {
+                                case Cafe.Cafeler.espresso:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("espressonuz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+                                case Cafe.Cafeler.latte:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("latteniz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+
+                                case Cafe.Cafeler.americano:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("americanonuz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+                            }
+
+                        }
+
+                        while (false);
+
+                        break;
+
+                    case Cafe.Cafelermasa.masa2:
+
+
+                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
+                        Console.WriteLine(" ");
+
+                        do
+                        {
+
+                            Console.WriteLine("makarna 8");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("pizza 9");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("patates köfte 10");
+                            Console.WriteLine(" ");
+
+                            Cafe.Cafeler num = new Cafe.Cafeler();
+                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                            switch (num)
+                            {
+                                case Cafe.Cafeler.makarna:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("makarnanız getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+                                case Cafe.Cafeler.patateskofte:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("patates köfteniz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+
+                                case Cafe.Cafeler.pizza:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("pizzanız getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+                            }
+
+                        }
+
+                        while (false);
+
+                        break;
+
+
+
+                    case Cafe.Cafelermasa.masa3:
+
+
+
+                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
+                        Console.WriteLine(" ");
+
+                        do
+                        {
+
+                            Console.WriteLine("ıhlamur 3");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("kuşburnu 4");
+                            Console.WriteLine(" ");
+
+
+                            Console.WriteLine("çay 1");
+                            Console.WriteLine(" ");
+
+                            Cafe.Cafeler num = new Cafe.Cafeler();
+                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                            switch (num)
+                            {
+                                case Cafe.Cafeler.ihlamur:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("ıhlamurunuz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+                                case Cafe.Cafeler.cay:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("çayınız getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+
+
+                                case Cafe.Cafeler.kusburnu:
+
+                                    Console.WriteLine(" ");
+                                    Console.WriteLine("kuşburnunuz getiriliyor");
+                                    Console.WriteLine(" ");
+
+                                    break;
+                            }
+
+                        }
+
+                        while (false);
+
+                        break;
+
+                case Cafe.Cafelermasa.masa4:
+
+                    Console.WriteLine("maalesef bu masamız doludur");
+
+                    break;
+
+                    
+
+
+                    case Cafe.Cafelermasa.masa5:
+
+                        do
+                        {
+                            Console.WriteLine("menüden ne sipariş vermek istersiniz");
+                            Console.WriteLine(" ");
+
+                            cafe.Yazmak();
+
+                        }
+                        while (false);
+
+                        break;
+
+                    }
+
+
+
+                }
+
+
+
+            }
+                
+        
 }
