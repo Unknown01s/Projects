@@ -12,7 +12,13 @@ public class Main {
         daire5,
         daire6
     }
+public enum watchs{
+        seiko,
+    tissot,
+    ;
 
+
+}
 
     public static void main(String[] args) {
 
@@ -152,6 +158,7 @@ public class Main {
                 break;
 
  */
+        /*
         Scanner scanner = new Scanner(System.in);
 
         Headphones headphones = new Headphones();
@@ -170,10 +177,43 @@ public class Main {
 
         System.out.println(headphones.getPrice());
         System.out.println(headphones.getYear());
+*/
+        Scanner scanner = new Scanner(System.in);
+        Watch watch = new Watch();
 
+        System.out.println("mağzamıza hoş geldiniz lütfen seçmek istediğiniz saat markasını seçini");
+        System.out.println("0 : Seiko");
+        System.out.println("1 . Tissot");
+
+       watchs saat =watchs.values()[scanner.nextInt()];
+
+       switch (saat){
+           case seiko:
+               watch.setBrand("seiko");
+               watch.setType("leather");
+               watch.setPressure(5);
+               watch.setPrice(12900);
+
+               System.out.println("brand :" + watch.getBrand());
+               System.out.println("strap type : "+ watch.getType());
+               System.out.println("atm : " +watch.getPressure());
+               System.out.println("Price : "+watch.getPrice());
+               break;
+
+           case tissot:
+               watch.setBrand("tissot");
+               watch.setType("titanium");
+               watch.setPressure(10);
+               watch.setPrice(13800);
+
+               System.out.println("brand :" + watch.getBrand());
+               System.out.println("strap type : "+ watch.getType());
+               System.out.println("atm : " +watch.getPressure());
+               System.out.println("Price : "+watch.getPrice());
+               break;
+           }
+       }
     }
-    {
 
 
-    }
-}
+
