@@ -1,0 +1,15 @@
+/Users/alihansmac/Desktop/Project/Exams/Exams/bin/Debug/net6.0/Exams
+/Users/alihansmac/Desktop/Project/Exams/Exams/bin/Debug/net6.0/Exams.deps.json
+/Users/alihansmac/Desktop/Project/Exams/Exams/bin/Debug/net6.0/Exams.runtimeconfig.json
+/Users/alihansmac/Desktop/Project/Exams/Exams/bin/Debug/net6.0/Exams.dll
+/Users/alihansmac/Desktop/Project/Exams/Exams/bin/Debug/net6.0/Exams.pdb
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.csproj.AssemblyReference.cache
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.AssemblyInfoInputs.cache
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.AssemblyInfo.cs
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.csproj.CoreCompileInputs.cache
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.dll
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/refint/Exams.dll
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.pdb
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/Exams.genruntimeconfig.cache
+/Users/alihansmac/Desktop/Project/Exams/Exams/obj/Debug/net6.0/ref/Exams.dll

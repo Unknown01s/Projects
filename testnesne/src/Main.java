@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -64,7 +65,7 @@ public class Main {
     }
 }
 
- */
+
 
 
         System.out.println("Binamıza Hoş geldiniz Lütfen Bilgileri görmek için 1 e basınız");
@@ -149,8 +150,26 @@ public class Main {
                 System.out.println(" ");
                 gokberk.Write();
                 break;
-        }
 
+ */
+        Scanner scanner = new Scanner(System.in);
+
+        Headphones headphones = new Headphones();
+
+        System.out.println("lütfen girmek istediğiniz markayı seçiniz");
+
+        headphones.setbrand(scanner.next());
+
+        System.out.println("lütfen girmek yılı seçiniz");
+
+        headphones.setYear(scanner.nextInt());
+
+        System.out.println(headphones.getbrand());
+
+        headphones.setPrice(7999);
+
+        System.out.println(headphones.getPrice());
+        System.out.println(headphones.getYear());
 
     }
     {

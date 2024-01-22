@@ -318,15 +318,15 @@ internal class Program
 3.  3Çay
 4. 4Ayran
 5  5hesap istedi 
-*/
 
+*/
 using NesneTabanli;
 internal class Program
 {
     private static void Main(string[] args)
     {
-
-        {
+        /*
+        
             Console.WriteLine("Kafemize Hoşgeldiniz Lütfen Gördüğünüz Boş Alanları Tercih Ediniz");
             Console.WriteLine(" ");
 
@@ -549,15 +549,77 @@ internal class Program
 
                         break;
 
+            
+
                     }
+            */
+
+
+                
+
+        Bina bina = new Bina();
+
+        bina.setBinano(-1);
+        Console.WriteLine(bina.getBinano());
+
+        bina.Binaadi = "ahmet";
+        Console.WriteLine(bina.Binaadi);
+
+
+        bina.setAdres("selam");
+        Console.WriteLine(bina.getAdres());
 
 
 
-                }
+
+        Headphones headphones = new Headphones();
+
+
+        headphones.setfrequency("low band");
+        headphones.setHz(Convert.ToInt32(Console.ReadLine()));
+
+        Console.WriteLine(headphones.getfrequency());
+        Console.WriteLine("hz is :" + headphones.getHz());
+
+
+        headphones.brand = "Apple";
+        headphones.setPrice(1200);
+
+
+        Console.WriteLine(headphones.getPrice());
+        Console.WriteLine(headphones.brand);
+
+
+        Console.WriteLine("hoşeldiniz lütfen bir marka seçiniz");
+
+        Headphones.siralama siralama = new Headphones.siralama();
+
+        siralama = (Headphones.siralama)Convert.ToInt32(Console.ReadLine());
+
+
+
+        switch (siralama)
+        {
+            case Headphones.siralama.apple:
+                headphones.brand = "apple";
+
+
+                Console.WriteLine(headphones.brand);
+                headphones.setModel(Console.ReadLine());
+                Console.WriteLine(headphones.getModel());
+
+                break;
+
+        }
+
+       
+        
 
 
 
             }
-                
-        
+
+    
 }
+
+

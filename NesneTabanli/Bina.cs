@@ -3,10 +3,11 @@ namespace NesneTabanli
 {
 	public class Bina
 	{
-		public int binano;
-		public string binaadi;
-		public string adres;
-		public int sum;
+		private int binano;
+		public string Binaadi { get; set; }
+		
+		private string adres;
+		public int Sum { get; set; }
 
 		public void Yazdir1()
 		{
@@ -17,8 +18,23 @@ namespace NesneTabanli
 		}
 
 
+		public int getBinano()
+		{
+			return binano;
+		}
 
-
+		public void setBinano(int binano)
+		{
+			if (binano > 0)
+			{
+                this.binano = binano;
+            }
+			else
+			{
+				Console.WriteLine("bina numarası 1 den küçük olamaz");
+			}
+			
+		}
 
 		public void Yazdir()
 		{
@@ -27,13 +43,20 @@ namespace NesneTabanli
 			
 		}
 
+		public string getAdres()
+		{
+			return adres;
+		}
 
-
+		public void setAdres(string adres)
+		{
+			this.adres = adres;
+		}
 
         public Bina(int binano, string binaadi, string adres)
 		{
 			this.binano = binano;
-			this.binaadi = binaadi;
+			this.Binaadi = binaadi;
 			this.adres = adres;
 
 		}
