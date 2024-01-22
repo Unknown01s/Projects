@@ -552,7 +552,7 @@ internal class Program
             
 
                     }
-            */
+            
 
 
                 
@@ -613,9 +613,63 @@ internal class Program
         }
 
        
+        */
+        Console.WriteLine("Programımıza Hoşgeldiniz Lütfen seçmek istediğiniz saat markasını tuşluayınız");
+
+        Console.WriteLine("seiko = 1");
+        Console.WriteLine("tissot =2");
+
+        Watch watch = new Watch();
+
+        Watch.Watchs saat = new Watch.Watchs();
+
+         saat = (Watch.Watchs)Convert.ToInt32(Console.ReadLine());
+
+        int sum = 1;
+      
+
+        do
+        {
+         
+
+            switch (saat)
+            {
+
+                case Watch.Watchs.seiko:
+
+                    watch.setBrand("Seiko");
+                    watch.setType("Leather");
+                    watch.setprice(12800);
+                    watch.Pressure = 4;
+                    Console.WriteLine("Brand : " + watch.getBrand());
+                    Console.WriteLine("Strap Type : " + watch.getType());
+                    Console.WriteLine("Atm : " + watch.Pressure);
+                    Console.WriteLine("Price : " + watch.getprice());
+                    break;
+
+
+                case Watch.Watchs.tissot:
+
+                    watch.setBrand("Tissot");
+                    watch.setType("Stainless Steel");
+                    watch.setprice(14800);
+                    watch.Pressure = 6;
+                    Console.WriteLine("Brand : " + watch.getBrand());
+                    Console.WriteLine("Strap Type : " + watch.getType());
+                    Console.WriteLine("Atm : " + watch.Pressure);
+                    Console.WriteLine("Price : " + watch.getprice());
+                    break;
+
+
+
+            }
+
+
+            
+
+        }
+        while (sum++ < 3);
         
-
-
 
             }
 
