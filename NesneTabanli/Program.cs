@@ -321,359 +321,455 @@ internal class Program
 
 */
 using NesneTabanli;
-internal class Program
-{
-    private static void Main(string[] args)
+/*
+
+Console.WriteLine("Kafemize Hoşgeldiniz Lütfen Gördüğünüz Boş Alanları Tercih Ediniz");
+Console.WriteLine(" ");
+
+Cafe cafe = new Cafe();
+
+
+Console.WriteLine("lütfen seçmek isteiğiniz masayı belirtiniz");
+Console.WriteLine(" ");
+Console.WriteLine("NOT : Sadece 1 den 5 e kadar numaralı masalarımız müsaittir.");
+Console.WriteLine(" ");
+Console.WriteLine("Lütfen bir Masa Numarası seçiniz");
+
+Cafe.Cafelermasa masalar = new Cafe.Cafelermasa();
+
+masalar = (Cafe.Cafelermasa)(Convert.ToInt32(Console.ReadLine()));
+
+switch (masalar)
+
+
     {
-        /*
-        
-            Console.WriteLine("Kafemize Hoşgeldiniz Lütfen Gördüğünüz Boş Alanları Tercih Ediniz");
+    case Cafe.Cafelermasa.masa1:
+
+            Console.WriteLine("menüden ne sipariş vermek istersiniz");
             Console.WriteLine(" ");
 
-            Cafe cafe = new Cafe();
-            
-            
-            Console.WriteLine("lütfen seçmek isteiğiniz masayı belirtiniz");
-            Console.WriteLine(" ");
-            Console.WriteLine("NOT : Sadece 1 den 5 e kadar numaralı masalarımız müsaittir.");
-            Console.WriteLine(" ");
-            Console.WriteLine("Lütfen bir Masa Numarası seçiniz");
-
-            Cafe.Cafelermasa masalar = new Cafe.Cafelermasa();
-
-            masalar = (Cafe.Cafelermasa)(Convert.ToInt32(Console.ReadLine()));
-
-            switch (masalar)
-               
-
-                {
-                case Cafe.Cafelermasa.masa1:
-
-                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
-                        Console.WriteLine(" ");
-
-                        do
-                        {
-
-                            Console.WriteLine("espresso 6");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("latte 5");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("americano 7");
-                            Console.WriteLine(" ");
-
-                            Cafe.Cafeler num = new Cafe.Cafeler();
-                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
-
-
-
-                            switch (num)
-                            {
-                                case Cafe.Cafeler.espresso:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("espressonuz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-                                case Cafe.Cafeler.latte:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("latteniz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-
-                                case Cafe.Cafeler.americano:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("americanonuz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-                            }
-
-                        }
-
-                        while (false);
-
-                        break;
-
-                    case Cafe.Cafelermasa.masa2:
-
-
-                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
-                        Console.WriteLine(" ");
-
-                        do
-                        {
-
-                            Console.WriteLine("makarna 8");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("pizza 9");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("patates köfte 10");
-                            Console.WriteLine(" ");
-
-                            Cafe.Cafeler num = new Cafe.Cafeler();
-                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
-
-
-
-                            switch (num)
-                            {
-                                case Cafe.Cafeler.makarna:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("makarnanız getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-                                case Cafe.Cafeler.patateskofte:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("patates köfteniz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-
-                                case Cafe.Cafeler.pizza:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("pizzanız getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-                            }
-
-                        }
-
-                        while (false);
-
-                        break;
-
-
-
-                    case Cafe.Cafelermasa.masa3:
-
-
-
-                        Console.WriteLine("menüden ne sipariş vermek istersiniz");
-                        Console.WriteLine(" ");
-
-                        do
-                        {
-
-                            Console.WriteLine("ıhlamur 3");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("kuşburnu 4");
-                            Console.WriteLine(" ");
-
-
-                            Console.WriteLine("çay 1");
-                            Console.WriteLine(" ");
-
-                            Cafe.Cafeler num = new Cafe.Cafeler();
-                            num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
-
-
-
-                            switch (num)
-                            {
-                                case Cafe.Cafeler.ihlamur:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("ıhlamurunuz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-                                case Cafe.Cafeler.cay:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("çayınız getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-
-
-                                case Cafe.Cafeler.kusburnu:
-
-                                    Console.WriteLine(" ");
-                                    Console.WriteLine("kuşburnunuz getiriliyor");
-                                    Console.WriteLine(" ");
-
-                                    break;
-                            }
-
-                        }
-
-                        while (false);
-
-                        break;
-
-                case Cafe.Cafelermasa.masa4:
-
-                    Console.WriteLine("maalesef bu masamız doludur");
-
-                    break;
-
-                    
-
-
-                    case Cafe.Cafelermasa.masa5:
-
-                        do
-                        {
-                            Console.WriteLine("menüden ne sipariş vermek istersiniz");
-                            Console.WriteLine(" ");
-
-                            cafe.Yazmak();
-
-                        }
-                        while (false);
-
-                        break;
-
-            
-
-                    }
-            
-
-
-                
-
-        Bina bina = new Bina();
-
-        bina.setBinano(-1);
-        Console.WriteLine(bina.getBinano());
-
-        bina.Binaadi = "ahmet";
-        Console.WriteLine(bina.Binaadi);
-
-
-        bina.setAdres("selam");
-        Console.WriteLine(bina.getAdres());
-
-
-
-
-        Headphones headphones = new Headphones();
-
-
-        headphones.setfrequency("low band");
-        headphones.setHz(Convert.ToInt32(Console.ReadLine()));
-
-        Console.WriteLine(headphones.getfrequency());
-        Console.WriteLine("hz is :" + headphones.getHz());
-
-
-        headphones.brand = "Apple";
-        headphones.setPrice(1200);
-
-
-        Console.WriteLine(headphones.getPrice());
-        Console.WriteLine(headphones.brand);
-
-
-        Console.WriteLine("hoşeldiniz lütfen bir marka seçiniz");
-
-        Headphones.siralama siralama = new Headphones.siralama();
-
-        siralama = (Headphones.siralama)Convert.ToInt32(Console.ReadLine());
-
-
-
-        switch (siralama)
-        {
-            case Headphones.siralama.apple:
-                headphones.brand = "apple";
-
-
-                Console.WriteLine(headphones.brand);
-                headphones.setModel(Console.ReadLine());
-                Console.WriteLine(headphones.getModel());
-
-                break;
-
-        }
-
-       
-        */
-        Console.WriteLine("Programımıza Hoşgeldiniz Lütfen seçmek istediğiniz saat markasını tuşluayınız");
-
-        Console.WriteLine("seiko = 1");
-        Console.WriteLine("tissot =2");
-
-        Watch watch = new Watch();
-
-        Watch.Watchs saat = new Watch.Watchs();
-
-         saat = (Watch.Watchs)Convert.ToInt32(Console.ReadLine());
-
-        int sum = 1;
-      
-
-        do
-        {
-         
-
-            switch (saat)
+            do
             {
 
-                case Watch.Watchs.seiko:
-
-                    watch.setBrand("Seiko");
-                    watch.setType("Leather");
-                    watch.setprice(12800);
-                    watch.Pressure = 4;
-                    Console.WriteLine("Brand : " + watch.getBrand());
-                    Console.WriteLine("Strap Type : " + watch.getType());
-                    Console.WriteLine("Atm : " + watch.Pressure);
-                    Console.WriteLine("Price : " + watch.getprice());
-                    break;
+                Console.WriteLine("espresso 6");
+                Console.WriteLine(" ");
 
 
-                case Watch.Watchs.tissot:
-
-                    watch.setBrand("Tissot");
-                    watch.setType("Stainless Steel");
-                    watch.setprice(14800);
-                    watch.Pressure = 6;
-                    Console.WriteLine("Brand : " + watch.getBrand());
-                    Console.WriteLine("Strap Type : " + watch.getType());
-                    Console.WriteLine("Atm : " + watch.Pressure);
-                    Console.WriteLine("Price : " + watch.getprice());
-                    break;
+                Console.WriteLine("latte 5");
+                Console.WriteLine(" ");
 
 
+                Console.WriteLine("americano 7");
+                Console.WriteLine(" ");
+
+                Cafe.Cafeler num = new Cafe.Cafeler();
+                num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                switch (num)
+                {
+                    case Cafe.Cafeler.espresso:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("espressonuz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+                    case Cafe.Cafeler.latte:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("latteniz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+
+                    case Cafe.Cafeler.americano:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("americanonuz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+                }
 
             }
 
+            while (false);
 
-            
+            break;
+
+        case Cafe.Cafelermasa.masa2:
+
+
+            Console.WriteLine("menüden ne sipariş vermek istersiniz");
+            Console.WriteLine(" ");
+
+            do
+            {
+
+                Console.WriteLine("makarna 8");
+                Console.WriteLine(" ");
+
+
+                Console.WriteLine("pizza 9");
+                Console.WriteLine(" ");
+
+
+                Console.WriteLine("patates köfte 10");
+                Console.WriteLine(" ");
+
+                Cafe.Cafeler num = new Cafe.Cafeler();
+                num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                switch (num)
+                {
+                    case Cafe.Cafeler.makarna:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("makarnanız getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+                    case Cafe.Cafeler.patateskofte:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("patates köfteniz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+
+                    case Cafe.Cafeler.pizza:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("pizzanız getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+                }
+
+            }
+
+            while (false);
+
+            break;
+
+
+
+        case Cafe.Cafelermasa.masa3:
+
+
+
+            Console.WriteLine("menüden ne sipariş vermek istersiniz");
+            Console.WriteLine(" ");
+
+            do
+            {
+
+                Console.WriteLine("ıhlamur 3");
+                Console.WriteLine(" ");
+
+
+                Console.WriteLine("kuşburnu 4");
+                Console.WriteLine(" ");
+
+
+                Console.WriteLine("çay 1");
+                Console.WriteLine(" ");
+
+                Cafe.Cafeler num = new Cafe.Cafeler();
+                num = (Cafe.Cafeler)(Convert.ToInt32(Console.ReadLine()));
+
+
+
+                switch (num)
+                {
+                    case Cafe.Cafeler.ihlamur:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("ıhlamurunuz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+                    case Cafe.Cafeler.cay:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("çayınız getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+
+
+                    case Cafe.Cafeler.kusburnu:
+
+                        Console.WriteLine(" ");
+                        Console.WriteLine("kuşburnunuz getiriliyor");
+                        Console.WriteLine(" ");
+
+                        break;
+                }
+
+            }
+
+            while (false);
+
+            break;
+
+    case Cafe.Cafelermasa.masa4:
+
+        Console.WriteLine("maalesef bu masamız doludur");
+
+        break;
+
+
+
+
+        case Cafe.Cafelermasa.masa5:
+
+            do
+            {
+                Console.WriteLine("menüden ne sipariş vermek istersiniz");
+                Console.WriteLine(" ");
+
+                cafe.Yazmak();
+
+            }
+            while (false);
+
+            break;
+
+
 
         }
-        while (sum++ < 3);
-        
 
-            }
 
-    
+
+
+
+Bina bina = new Bina();
+
+bina.setBinano(-1);
+Console.WriteLine(bina.getBinano());
+
+bina.Binaadi = "ahmet";
+Console.WriteLine(bina.Binaadi);
+
+
+bina.setAdres("selam");
+Console.WriteLine(bina.getAdres());
+
+
+
+
+Headphones headphones = new Headphones();
+
+
+headphones.setfrequency("low band");
+headphones.setHz(Convert.ToInt32(Console.ReadLine()));
+
+Console.WriteLine(headphones.getfrequency());
+Console.WriteLine("hz is :" + headphones.getHz());
+
+
+headphones.brand = "Apple";
+headphones.setPrice(1200);
+
+
+Console.WriteLine(headphones.getPrice());
+Console.WriteLine(headphones.brand);
+
+
+Console.WriteLine("hoşeldiniz lütfen bir marka seçiniz");
+
+Headphones.siralama siralama = new Headphones.siralama();
+
+siralama = (Headphones.siralama)Convert.ToInt32(Console.ReadLine());
+
+
+
+switch (siralama)
+{
+case Headphones.siralama.apple:
+    headphones.brand = "apple";
+
+
+    Console.WriteLine(headphones.brand);
+    headphones.setModel(Console.ReadLine());
+    Console.WriteLine(headphones.getModel());
+
+    break;
+
 }
+
+
+
+Console.WriteLine("Programımıza Hoşgeldiniz Lütfen seçmek istediğiniz saat markasını tuşluayınız");
+
+Console.WriteLine("seiko = 1");
+Console.WriteLine("tissot =2");
+
+Watch watch = new Watch();
+
+Watch.Watchs saat = new Watch.Watchs();
+
+saat = (Watch.Watchs)Convert.ToInt32(Console.ReadLine());
+
+int sum = 1;
+
+
+do
+{
+
+
+switch (saat)
+{
+
+    case Watch.Watchs.seiko:
+
+        watch.setBrand("Seiko");
+        watch.setType("Leather");
+       // watch.setprice(12800);
+        watch.Pressure = 4;
+        Console.WriteLine("Brand : " + watch.getBrand());
+        Console.WriteLine("Strap Type : " + watch.getType());
+        Console.WriteLine("Atm : " + watch.Pressure);
+       // Console.WriteLine("Price : " + watch.getprice());
+        break;
+
+
+    case Watch.Watchs.tissot:
+
+        watch.setBrand("Tissot");
+        watch.setType("Stainless Steel");
+        watch.setprice(14800);
+        watch.Pressure = 6;
+        Console.WriteLine("Brand : " + watch.getBrand());
+        Console.WriteLine("Strap Type : " + watch.getType());
+        Console.WriteLine("Atm : " + watch.Pressure);
+        Console.WriteLine("Price : " + watch.getprice());
+        break;
+
+
+
+}
+
+
+
+
+}
+while (sum++ < 3);
+
+
+
+
+
+
+Araba araba = new Araba();
+
+Araba.hiz = 50;
+Araba.hareketet();
+
+
+araba.markayazdir();
+
+Araba.vites = "otomatik";
+
+Console.WriteLine(Araba.vites);
+
+Arabo arabo = new Arabo();
+
+arabo.korna();
+arabo.motory = "kastrol";
+
+
+KiralikEv kiralikEv = new KiralikEv(4, 5, "adana");
+
+kiralikEv.KiraBedeli = 15000;
+
+kiralikEv.adres = "ankara";
+
+kiralikEv.kapinumarasi = 4;
+
+
+Console.WriteLine(kiralikEv.odasayisi);
+
+
+//Home home = new Home(3, 6, "antep");
+
+//home.yazdir();
+
+
+kiralikEv.yazdir();
+
+
+SatilikEv satilikEv = new SatilikEv(3, 5, "urfa");
+
+
+satilikEv.yazdir();
+
+
+
+
+
+
+
+Computer.yazdirs();
+
+
+Computer computer = new Computer();
+
+
+Computer.madeof = "Turkey";
+
+Console.WriteLine("lütfen bir marka giriniz");
+
+computer.Brand = Console.ReadLine();
+
+computer.yazdir();
+
+Console.WriteLine(Computer.madeof);
+
+computer.setram();
+
+Console.WriteLine("Memory : " + computer.getram());
+
+computer.yazdirvis();
+
+Cmpe cmpe = new Cmpe();
+
+
+cmpe.yazdirvis();
+
+
+
+GeoSekil kare = new Kare();
+GeoSekil dikdortgen = new Dikdortgen();
+
+kare.kisakenar = 3;
+kare.uzunkenar = 3;
+
+dikdortgen.uzunkenar = 5;
+dikdortgen.kisakenar = 2;
+
+kare.cevrehesapla();
+dikdortgen.cevrehesapla();
+*/
+
+
+IDataAcsessRepostory dataAcsessRepostory = new OracleDataAcsess();
+
+dataAcsessRepostory.Ekle();
+dataAcsessRepostory.Sorgula();
+dataAcsessRepostory.Sil();
+dataAcsessRepostory.Guncelle();
+
+
 
 

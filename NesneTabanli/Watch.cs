@@ -14,6 +14,22 @@ namespace NesneTabanli
         {
             this.Brand = Brand;
 
+            Watch.Watchs saats = new Watch.Watchs();
+
+           
+
+            switch (this.Brand)
+
+            {
+                case "Seiko":
+
+                    this.price = 12800;
+                    Console.WriteLine(this.price);
+
+                    break;
+
+            }
+
         }
         public void setType(string Type)
         {

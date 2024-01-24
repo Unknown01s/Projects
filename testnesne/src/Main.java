@@ -20,7 +20,7 @@ public enum watchs{
 
 }
 
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
 
 /*
     Car araba = new Car();
@@ -177,7 +177,7 @@ public enum watchs{
 
         System.out.println(headphones.getPrice());
         System.out.println(headphones.getYear());
-*/
+
         Scanner scanner = new Scanner(System.in);
         Watch watch = new Watch();
 
@@ -212,6 +212,66 @@ public enum watchs{
                System.out.println("Price : "+watch.getPrice());
                break;
            }
+
+
+
+        Araba araba =new Araba();
+
+        Araba.Year=1996;
+        Araba.yazdir1();
+        araba.yazdir();
+        KiralikEv kiralikEv = new KiralikEv(3,4,"adana");
+Ev ev = new Ev(3,6,"istanbul");
+
+kiralikEv.yazdir();
+ev.yazdir2();
+
+
+Kentseldonusum kentseldonusum=new Kentseldonusum();
+
+kentseldonusum.dairesayisi=9;
+
+        System.out.println(kentseldonusum.getDairesayisi());
+
+Kentseldonusum.yazdir();
+
+kentseldonusum.yazdir2();
+
+*/
+
+
+Kare kare =new Kare();
+GeometrikSekiller main=new Ucgen();
+
+kare.islemformulu();
+main.islemformulu();
+
+
+IDataAcsess shortcut=new MyOracleAcsess();
+IDataAcsess shortcuts=new MySQLAcsess();
+
+shortcuts.Okuma();
+
+shortcut.Guncelle();
+
+shortcut.Cıkarma();
+
+shortcuts.Ekleme();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        }
     }
 
