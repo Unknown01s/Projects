@@ -760,16 +760,182 @@ dikdortgen.kisakenar = 2;
 
 kare.cevrehesapla();
 dikdortgen.cevrehesapla();
-*/
+
+
+
+
 
 
 IDataAcsessRepostory dataAcsessRepostory = new OracleDataAcsess();
 
 dataAcsessRepostory.Ekle();
+Console.WriteLine(" ");
+
 dataAcsessRepostory.Sorgula();
+Console.WriteLine(" ");
+
 dataAcsessRepostory.Sil();
+Console.WriteLine(" ");
+
 dataAcsessRepostory.Guncelle();
+Console.WriteLine(" ");
 
 
 
 
+TestAbs1.abs1();
+Console.WriteLine(" ");
+
+
+TestAbs1 test = new TestAbs2();
+
+test.abs2();
+Console.WriteLine(" ");
+
+
+Headphones tele = new Telephone();
+tele.vir1();
+Console.WriteLine(" ");
+
+
+Headphones head = new Headphones();
+head.vir1();
+Console.WriteLine(" ");
+
+
+
+
+ITestRepository repository = new IClassTesto();
+
+ITestRepository repository2 = new IClassTestt();
+
+
+repository.test1();
+Console.WriteLine(" ");
+
+repository2.test1();
+Console.WriteLine(" ");
+
+
+repository.test2();
+Console.WriteLine(" ");
+
+
+repository2.test2();
+Console.WriteLine(" ");
+
+
+repository.test3();
+Console.WriteLine(" ");
+
+
+repository2.test3();
+Console.WriteLine(" ");
+
+
+
+
+
+
+
+
+List<int> sayilar = new List<int>();
+sayilar.Add(1);
+sayilar.Add(7);
+sayilar.Add(10);
+sayilar.Insert(1, 5);
+
+List<KiralikEv> kiralikEvler = new List<KiralikEv>()
+{
+    new KiralikEv(4,5,"ankara"),
+    new KiralikEv(3,5,"izmir"),
+    new KiralikEv(3,5,"aydın"),
+    new KiralikEv(1,5,"amasya")
+};
+//kiralikEvler.Add(new KiralikEv(4,5,"ankara"));
+//kiralikEvler.Add(new KiralikEv(3, 5, "izmir"));
+//kiralikEvler.Add(new KiralikEv(3, 5, "aydın"));
+//kiralikEvler.Add(new KiralikEv(1, 5, "amasya"));
+
+
+//for (int i = 0; i < sayilar.Count; i++)
+//{
+//Console.WriteLine(sayilar[i]);
+//}
+
+foreach (KiralikEv item in kiralikEvler)
+{
+    Console.WriteLine(item.adres);
+}
+
+
+
+
+List<string> isimler = new List<string>();
+
+isimler.Add("alihan");
+isimler.Add("mustafa");
+isimler.Add("beyza");
+isimler.Insert(2, "ömer");
+
+foreach (var item in isimler)
+{
+    Console.WriteLine(item);
+}
+
+
+
+List<int> ints = new List<int>();
+
+ints.Add(2);
+ints.Add(3);
+ints.Insert(1, 3);
+
+for (int i = 0; i < ints.Count; i++)
+{
+    Console.WriteLine(ints[i]);
+
+}
+
+foreach (var cot in ints)
+{
+    Console.WriteLine(cot);
+}
+
+
+List<ListTest> lists = new List<ListTest>();
+
+lists.Add(new ListTest(4, "slm", "httm"));
+lists.Add(new ListTest(3, "mrb", "sql"));
+lists.Insert(1,new ListTest(1, "al", "ver"));
+
+foreach (ListTest count in lists)
+{
+    Console.WriteLine(count.domain);
+
+}
+
+List<int> ints1 = new List<int>();
+
+ints1.Add(2);
+ints1.Add(3);
+ints1.Insert(1, 5);
+
+foreach (var slm in ints1)
+{
+    Console.WriteLine(slm);
+}
+*/
+
+KiralikEv kiralik = new KiralikEv(2,4,"adana");
+
+Liste<int> liste = new Liste<int>();
+
+int sayi = liste.generate(5);
+Console.WriteLine(sayi);
+
+Liste<KiralikEv> liste1 = new Liste<KiralikEv>();
+
+KiralikEv kiralikEv  = liste1.generate(kiralik);
+
+Console.WriteLine(kiralikEv.odasayisi);

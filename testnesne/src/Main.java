@@ -1,4 +1,6 @@
+import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -240,39 +242,45 @@ kentseldonusum.yazdir2();
 */
 
 
-Kare kare =new Kare();
-GeometrikSekiller main=new Ucgen();
+        Kare kare = new Kare();
+        GeometrikSekiller main = new Ucgen();
 
-kare.islemformulu();
-main.islemformulu();
-
-
-IDataAcsess shortcut=new MyOracleAcsess();
-IDataAcsess shortcuts=new MySQLAcsess();
-
-shortcuts.Okuma();
-
-shortcut.Guncelle();
-
-shortcut.Cıkarma();
-
-shortcuts.Ekleme();
+        kare.islemformulu();
+        main.islemformulu();
 
 
+        IDataAcsess shortcut = new MyOracleAcsess();
+        IDataAcsess shortcuts = new MySQLAcsess();
+
+        shortcuts.Okuma();
+
+        shortcut.Guncelle();
+
+        shortcut.Cıkarma();
+
+        shortcuts.Ekleme();
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        list.add(1);
+        list.add(2);
+        list.add(4);
 
 
+        for (int i = 0; i < list.size(); i++) {
+
+            System.out.println(list.get(i));
+        }
 
 
+        ArrayList<ListTest> listTests=new ArrayList<>();
+listTests.add(new ListTest("alihan",2));
 
+for (int i=0;i<listTests.size();i++){
+    System.out.println(listTests.get(i).isim);
+}
 
-
-
-
-
-
-
-
-       }
+    }
     }
 
 

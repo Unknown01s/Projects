@@ -96,7 +96,11 @@ namespace NesneTabanli
 
 		}
 
+		public virtual void vir1()
+		{
 
+			Console.WriteLine("bu bir Headphones clası voididir");
+		}
 
 
 	}
